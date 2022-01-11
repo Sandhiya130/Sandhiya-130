@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const person={id: "" ,fname:"" ,lname: ""};
+    function submitData(){
+        
+            person.id=document.getElementById('pid').value;
+            person.id=document.getElementById('firstname').value;
+    }
+    
+    function showdata()
+    {
+        window.location.href="new.html";
+    //shows data in text boxes local/session storage
+    }
+
+
+</script>
+
+
+    <body>
+        <form>
+            <label>enter id</label>
+            <input type="number" name="pid" id="pid"/>
+            <br/>
+            <label>enter id</label>
+            <input type="number" name="firstname" id="firstname"/>
+            <br/>
+            <button onclick="submitdata()">submit</button>
+            <button onclick="showdata()">show</button>
+        </form>
+
+    
+</body>
+</html>

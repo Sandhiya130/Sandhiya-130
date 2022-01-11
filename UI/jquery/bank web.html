@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>document</title>
+    <style>
+        input[type="text"]:valid{
+            background-color: green;
+        }
+        
+        
+            </style>
+  
+  
+  <script>
+      $(document).ready(function(){
+        
+        $(".mPIN-form").hide();
+        $(".Debit-form").hide();
+        
+$(".login").click(function(){
+    $(".login").css('color','red');
+  $(".mPIN-form").hide();
+  $(".Debit-form").hide();
+  $(".login-form").show();
+  
+});
+
+$(".Debit").click(function(){
+  $(".Debit-form").show();
+  $(".login-form").hide();
+  $(".mPIN-form").hide();
+  
+});
+
+$(".mPIN").click(function(){
+  $(".mPIN-form").show();
+  $(".login-form").hide();
+  $(".Debit-form").hide();
+ 
+});
+
+$(".btn").click(function(){
+  $(".input").val("");
+});});
+  </script>
+</head>
+
+<body>
+    
+  <center>AXIS BANK</center>
+  <nav class="w3-bar w3-black">
+      <a href="#" class="w3-bar w3-black">login</a>
+      <a href="#" class="w3-bar w3-black">debit card</a>
+      <a href="#" class="w3-bar w3-black">mpin</a>
+  </nav>
+    
+<div class="wrapper">
+    <div class="container">
+        <div class="login">Login ID</div>
+        <div class="Debit">Debit card no.</div>
+        <div class="mPIN">mPIN</div>
+        
+     
+      <div class="login-form">
+        <input type="text" placeholder="LOgin ID" class="input"><br />
+        <input type="password" placeholder="Password" class="input"><br />
+        <div class="btn">log in</div>
+    
+        <a href="Forgotpassword">Forgotpassword</a>
+        
+       
+        <span><a href="#">I forgot my username or password.</a></span>
+     </div>
+
+       <div class="Debit-form">
+          <input type="text" placeholder="Debit Card No." class="input"><br />
+          <input type="text" placeholder="Card No." class="input"><br />
+          <input type="password" placeholder="PIN No." class="input"><br />
+          <span><a href="#">I forgot my username or password.</a></span>
+       </div>
+      
+     
+       <div class="mPIN-form">
+        <input type="text" placeholder="Customer ID" class="input"><br />
+        <input type="password" placeholder="mPIN" class="input"><br />
+        <div class="btn">log in</div>
+        <span><a href="#"><center></center>I forgot my username or password.</a></center></span>
+     </div>
+      
+    </div>
+  </div>
+
+
+
+
+    
+</body>
+</html>
+
+
+

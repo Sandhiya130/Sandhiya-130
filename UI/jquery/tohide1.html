@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tohide').click(function(){
+            $('.tohide').hide();  
+            });
+          $('.showlogin').click(function(){
+
+          alert("enter your credentials");
+          $('.to show').show();
+
+        });
+    });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>tabs</h2>
+        <u1 class="nav bar">
+            <li class="active" , id ="tohide"><a href= "">login</a></li>
+            <li>
+                <a id='tohide'>debit card</a>
+                <div class="tohide">
+                    <center>
+                        <form>
+                            <fieldset>
+                                <legend>Login</legend>
+                                <label>Login </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button> 
+                            
+                                
+                    
+                            </fieldset>
+                        </form>
+                </div>
+            </li>
+        </u1>
+    </div>
+    
+</body>
+</html>

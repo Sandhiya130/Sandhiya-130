@@ -1,0 +1,31 @@
+{
+
+
+	"Cameras": [{
+			"product name": "Camera",
+			"model name": "DSLR",
+
+			"price": 50000,
+			"camera properities": "high resolution",
+			"tags": ["under 50000", "DSLR", "5star rating"]
+		},
+		{
+
+			"product name": "Camera",
+			"model name": "Canon",
+
+			"price": 60000,
+			"camera properities": "high resolution",
+			"tags": ["under 70000", "Cannon", "5star rating"]
+		},
+		{
+			"product name": "Camera",
+			"model name": "Nikkon",
+
+			"price": 40000,
+			"camera properities": "high resolution",
+			"tags": ["under 50000", "Nikkon", "4star rating"]
+		}
+	]
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+      <script>
+     $(document).ready(function(){
+       $('h1').click(function(){
+    $(".c1").css('background-color','red');
+$(".c1").css('color','Blue');
+// $('.c1').css('fontSize','20px');
+$('.c1').css('font-style','bold');
+       });
+    });
+
+
+    $(":button").click(function(){
+    //code 1
+
+    //:button means input type button and other button
+    alert("Both are button --- input type button and other button");
+});
+
+$(":submit").click(function(){
+//code 2
+    //all input type-- button and  submit clicked
+    alert("input type submit clicked");
+});
+   
+
+</script>
+</head>
+//<body>
+  //  <script>
+        //    $(document).ready(function(){
+        //        alert('document is ready');
+        //         $('img').hide();
+        //         $('p').hide();
+    
+    
+    
+    
+        //    });
+    
+    //------------------------ it will hide one by one clicking
+    //     $(document).ready(function(){
+    // $('img').click(function(){
+    // $(this).hide();
+    
+    // });
+    
+    // $('p').click(function(){
+    // $(this).hide();
+    
+    // });
+    
+    
+    
+    //     });
+    //----------------------------------------
+    
+    //$(document).ready(function(){
+    // it will hide entire document while clicking
+    //$('*').click(function(){
+     //   $(this).hide();
+    //});
+    
+   // });
+   
+
+
+   
+
+<body>
+
+<form>
+        <fieldset>
+            <h1> heading</h1>
+            <legend>Personal Info</legend>
+            <label>First Name</label>
+            <input type="text" id="fname" />
+            <br/>
+            <label>Last Name</label>
+            <input type="text" id="lname" />
+            <br/>
+            <input type="button" class='c1' value="Submit" />
+            <button>Submit Data here</button>
+
+            <input type="submit" class='c1'value="Submit Button"/> 
+        </fieldset>
+           </form>
+    
+    
+    </body>
+    

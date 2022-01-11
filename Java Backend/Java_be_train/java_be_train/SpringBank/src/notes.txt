@@ -1,0 +1,16 @@
+java beans are java classes
+springggg actually works with java beans
+basic features of spring pillars di and aop
+bin factory to create beans
+method get bean
+app context is a run time environment resides on appp context 
+spring beans will created and placed on appcontext
+default bean scope is singleton
+
+
+
+ctrls has done it pass thru view 
+view resolver----sprong framewrk 
+reqq----url hits----
+
+

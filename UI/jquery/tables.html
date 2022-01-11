@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+
+   <script>
+$(document).ready(function(){
+$('#h').click(function(){
+$('tr:even').hide();
+
+});
+
+$('#s').click(function(){
+$('tr:even').show();
+
+});
+$('#b1').click(function(){
+
+// $('ul li:first').hide();//only grapes hides
+//$('ul li:first-child').hide(); //grapes and idli
+$('ul li:nth-child(4)').hide(); //nth child
+});
+
+
+});
+
+   </script>
+</head>
+<body>
+    <button id='h'>Hide</button>
+    <button id='s'>Show</button>
+
+    <table style="border: 5px solid green;">
+        <tr>
+            <th>rollno</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ankita</td>
+
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Amol</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nikita</td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Pranita</td>
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Kamlesh</td>
+
+        </tr>
+    </table>
+    <hr/>
+
+    <ul>
+        <li>Grapes</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Kivi</li>
+
+
+    </ul>
+<button id="b1">Click</button>
+
+    <ul>
+<li>Idli</li>
+<li>Dosa</li>
+<li>Uttapam</li>
+<li>Somthing</li>
+
+    </ul>
+
+    
+</body>
+</html>

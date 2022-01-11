@@ -1,0 +1,10 @@
+com\marticus\employee\entity\RestData.class
+com\marticus\employee\controller\RestUser.class
+com\marticus\employee\service\EmployeeService.class
+com\marticus\employee\EmployeeApplication.class
+com\marticus\employee\controller\AuthController.class
+com\marticus\employee\repo\UserRepo.class
+com\marticus\employee\controller\EmployeeController.class
+com\marticus\employee\entity\EmployeeEntity.class
+com\marticus\employee\entity\UserEntity.class
+com\marticus\employee\repo\EmployeeRepo.class

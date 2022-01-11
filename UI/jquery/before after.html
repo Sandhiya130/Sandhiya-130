@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#b2").click(function(){
+
+var name=$("#fruits").val();
+    $('ol').after("<li>" + " this is eatable "+ "</li>");
+});
+
+
+});
+
+            $("#b1").click(function(){
+var name=$('#veggies').val();
+$('ol').before("<li>" + "this is also eatable "+ "</li>");
+
+
+
+
+
+
+
+
+
+
+       });
+
+       
+    </script>
+
+</head>
+<body>
+
+<button id="b1">before fruits</button>
+<button id="b2">add veggies</button>
+
+<hr/>
+<div style="background-color:mediumpurple">
+    <input type='text' id='eatable'>
+   <ol id='fruits'>
+       <li> banana></li> 
+       <li>apple></li>
+   </ol>
+   <ol id='veggies'>
+       <li>carrot</li>
+       <li>raddish</li>
+   </ol>
+   
+
+
+</div>
+
+</body>
+</html>

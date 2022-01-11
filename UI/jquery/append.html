@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+$("#b1").click(function(){
+   // $("#intro").append("<b>I am BE(Computer Science)</b>");
+   // $("ol").append("<li>Mobiles</li>");
+    var prodname=$("#pname").val();
+    $('ol').append("<li>" + prodname + "</li>");
+});
+$("#b2").click(function(){
+    $("#intro").prepend("<b>I am BE(Computer Science) prepending this.....   </b>");
+   // $("ol").append("<li>Mobiles</li>");
+    var prodname=$("#pname").val();
+    $('ol').prepend("<li>" + prodname + "</li>");
+});
+$('#b3').click(function(){
+
+    var i="<p>This is a para</p>";//create para using html
+
+   
+    $('body').append('<p>This is a para</p>');
+    // $('body').append(i); 
+
+    var j=$("<p></p>").text("this is created using <b>jquery</b>");
+
+    var m=$("<p></p>").html("this is created using <b>jquery</b>");
+    // $('body').append(j); 
+
+    var k=document.createElement("p");
+    k.innerHTML="This para is created using docuemnt.createElement() ";
+    // $('body').append(k); 
+
+$('body').append(i,j,k,m); 
+
+    
+});
+
+
+       });
+    </script>
+
+</head>
+<body>
+<div style="background-color: aqua;width: auto;height: auto;">
+    <center>
+    <h1>Page Heading</h1>
+</center>
+</div>
+<h1>About Myself</h1>
+<p id="intro">This is my brief introduction</p>
+
+<hr/>
+<input type=text id="pname" />
+
+<ol><li>Laptops</li></ol>
+
+<button id="b1">Append Text</button>
+<button id="b2">Prepend Text</button>
+ <button id="b3">Create Para</button> 
+
+</body>
+</html>
+<!-- 
+    (multiple---infinite)
+append()----- Inserts content at the END of the selected element/multiple elements can also be inserted
+prepend()---Inserts content at the BEGINNING of the selected element/ multiple elements  can be inserted
+after()---Insert content AFTER  the selected element/ multiple elements  can be inserted
+before()--- Insert content BEFORE  the selected element/ multiple elements  can be inserted -->

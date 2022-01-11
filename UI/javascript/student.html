@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function san(){
+           document.getElementById("1").innerHTML="javascript";
+        }
+       
+    </script>
+</head>
+<body>
+    <p id="studentDetails"></p>
+    <p id="allDetails"></p>
+    <script>
+        let grade= 1 ;
+        const student={
+            firstname:"Diksheeka",
+            rollno:123,
+            mark1: 45,
+            mark2: 48,
+            fullDetails:function(){
+                return this.firstname + this.rollno +this.mark1 + this.mark2 +grade;
+            }
+        };
+        document.getElementById("studentDetails").innerHTML = student.firstname  +" "+ student.rollno +" "+ student.mark1 +" "+ student.mark2 +" "+ grade;
+        document.getElementById("allDetails").innerHTML=person.fullDetails();
+    </script>
+</body>
+</html>

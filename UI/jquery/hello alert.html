@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+       
+       
+        // $(document).ready(sayhello());
+        $(document).ready( function()
+        {
+
+        
+             
+                //  sayhello();
+               // var text=$('#b1').text();
+                //alert("text()   " + text);
+                //var html=$('#p1').html();
+                //alert("html()   " + html);
+                //var val=$('#t1').val();
+                //alert(val);
+            $('#b1').click(function(){
+                var t=$('p').text();
+                alert('the paragraph contains the following '+ t);
+                var r=$('p').attr('id');
+                alert("it is in the paragraph with id" +r);
+
+            
+
+            });
+        });
+             
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <input type ="text" id="t1" value="ss"/>
+    <p id="p1">hello from <b> world</b>page</p>
+    <p id="p2">hello from second <b> world</b>page</p>
+    <button id="b1"> click </button>
+    <a href="https://www/google.com"></a>
+    
+</body>
+</html>

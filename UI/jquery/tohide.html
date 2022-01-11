@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      #vi{
+          top: 50%;
+          left: 50%;
+      }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+      $(document).ready(function(){
+$('#tohide').hide();
+$('#showlogin').click(function(){
+    $('#tohide1').hide();
+    $('#tohide2').hide();
+    $('#tohide').show();
+});
+
+
+$('#tohide1').hide();
+$('#showDebitcard').click(function(){
+    $('#tohide').hide();
+    $('#tohide2').hide();
+
+    $('#tohide1').show();
+});
+
+
+$('#tohide2').hide();
+$('#showmpin').click(function(){
+    $('#tohide1').hide();
+    $('#tohide').hide();
+    $('#tohide2').show();
+});
+
+
+      });
+
+
+  </script>
+</head>
+<body style="background-color: rgb(138, 190, 206);">
+    
+<div class="container">
+  <h3>Welcome to Axis Bank</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="">Axis Bank home page</a></li>
+    <li>
+        <a id="showlogin">Login ID</a>
+        <div id="vi">
+    <div id="tohide">
+
+          <center>
+
+            <form>
+                    <fieldset>
+                        <legend>Login</legend>
+                        <label for="pwd"> User id  </label> 
+                        <input type="number" id="userid"  name="userid" required />
+                        <br/>
+                        <label for="pwd">Enter Password </label>
+                        <input type="password" id="pwd" name="pwd" required />
+                        <br/>
+                        <input type="submit" value="Submit" />
+                        <br>
+                         <br>
+
+                        <a href="">New User?Register</a>  |
+                        <a href="">Forgot Password</a> |
+                        <a href="">Enable Login ID</a> |
+
+
+                    </fieldset>
+                </form>
+
+
+            </center>
+
+    </div>
+    </div>
+    </li>
+
+    <li>
+        <a id="showDebitcard">Debit Card No.</a>
+        <div id="vi">
+    <div id="tohide1">
+          <center>
+
+            <form>
+                    <fieldset>
+                        <legend>Enter Debit Information</legend>
+                        <label for="cardno">Card No. </label> 
+                        <input type="text" id="cardno"  name="cardno" required />
+                        <br/>
+                        <label for="pwd">PIN No. </label>
+                        <input type="pinnumber" id="pin" name="pin" required />
+                        <br/>
+                        <input type="submit" value="Login" />
+                        <br><br>
+
+                        <a href="">First Time User?Register</a> |
+                        <a href="">Forgot Password</a>  |
+                        <a href="">Enable Login ID</a> |
+
+
+                    </fieldset>
+                </form>
+
+
+            </center>
+
+    </div>
+    </div>
+    </li>
+
+    <li>
+        <a id="showmpin">mPIN</a>
+        <div id="vi">
+    <div id="tohide2">
+          <center>
+
+            <form>
+                    <fieldset>
+                        <legend>Pin Details</legend>
+                         <h4>select an option</h4>
+                         <input type="radio">  CustomerID
+                           
+                         <input type="radio">  Register Mobile Number
+                         <br>
+                        <label for="id">Enter Customer  ID </label> 
+                        <input type="id" id="userid"  name="userid" required />
+                        <br/>
+                        <label for="mpin">Enter mPIN </label>
+                        <input type="mpin" id="pin" name="pin" required />
+                        <br/>
+                        <input type="submit" value="Submit" />
+
+                        <br>
+                         <br>
+
+                        <a href="">First Time User?Register</a> |
+                        <a href="">Forgot Password</a> |
+                        <a href="">Enable Login ID</a> |
+
+
+                    </fieldset>
+                </form>
+
+
+            </center>
+
+    </div>
+    </div>
+    </li>
+    </ul>
+    <br>
+    
+     
+   
+</div>
+
+  
+
+
+
+</body>
+</html>

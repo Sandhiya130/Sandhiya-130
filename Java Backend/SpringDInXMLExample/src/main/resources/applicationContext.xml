@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+                http://www.springframework.org/schema/beans 
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+        
+     <bean id="circleShape" class="com.marticus.Circle" /> 
+     <bean id="crectagleShape" class="com.marticus.Rectangle" /> 
+     
+        
+     <bean id="geometry" class="com.marticus.Geometry" >
+     	<constructor-arg ref="crectagleShape"/>     
+     </bean>  
+     
+     <bean id="geometry1" class="com.marticus.GeometryRect" scope="prototype" >
+     	   <property name="shape" ref="crectagleShape" />     	   
+     </bean>      
+    
+</beans>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>object array</h1>
+<p id="p1"></p> 
+<p id="p2"></p>
+<p id="lastElement"></p>   
+<hr/>
+<p id="f1" style="height: fit-content; width: fit-content; color: blue;"></p>
+<script>
+    const places=["Japan","germany","italy",2021];
+
+    document.getElementById('p1').innerHTML=places[0];
+    document.getElementById("lastElement").innerHTML=places[places.length-1];//Access last element in array
+    
+    var t='<ol>';
+    for (let index = 0; index < places.length; index++) {
+        t+='<li>' + places[index] + '</li>';
+        
+    }
+    t+='</ol>';
+    
+    document.getElementById("f1").innerHTML=t;
+    
+    
+    const personDet={place1:"Japan",place2:"germany",place3:"italy", year:2021};
+    document.getElementById("p2").innerHTML=placespos["place2"];
+
+
+</script>
+</body>
+</html>
