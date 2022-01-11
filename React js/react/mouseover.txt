@@ -1,0 +1,65 @@
+import ReactDOM from 'react-dom';
+import './index.css';
+
+import reportWebVitals from './reportWebVitals';
+
+
+//working with style
+
+function MyBorder(props){
+  return(
+    <div id="props.id" className={'MyBorder MyBorder-' + props.color}>
+      {props.children}
+    </div>
+  );
+}
+class Border extends React.Component
+{
+  constructor(){
+
+  
+  super();
+  this.hover=this.hover.bind(this);
+  this.state={
+    hover:false
+  }
+}
+
+hover()
+{
+  this.setSate({
+    hover:!this.state.hover
+  })
+  console.log(this.hover)
+}
+render()
+{
+  return(
+    
+  
+      <div onMouseEnter={this.hover}>
+      <MyBorder color="green" id="paintGreen">
+        <h1 className='MyDialog-title'>Welcome to First Dialog Box.</h1>
+        <p className='MyDialog-message'>This is content from First Dialog Box.</p>
+      </MyBorder>
+      <MyBorder color="red">
+        <h1 className='MyDialog-title'>Welcome to First Dialog Box.</h1>
+        <h1 className='MyDialog-title'>Welcome to First Dialog Box.</h1>
+        <p className='MyDialog-message'>This is content from First Dialog Box.</p>
+      </MyBorder>
+      <MyBorder color="blue">
+        <h1 className='MyDialog-title'>Welcome to First Dialog Box.</h1>
+        <p className='MyDialog-message'>This is content from First Dialog Box.</p>
+      </MyBorder>
+      </div>
+  
+  );
+}
+
+
+//ReactDOM.render(  
+  //<MyBorder /> ,
+//document.getElementById('root')
+//);
+
+//reportWebVitals();

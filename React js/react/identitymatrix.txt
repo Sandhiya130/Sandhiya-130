@@ -1,0 +1,53 @@
+num=[   
+        [1, 0, 0],  
+        [0, 1, 0],  
+        [0, 0, 1]  
+    ];  
+   
+function Identity(num)
+{
+     
+    for (i in num)
+    
+ 
+        {    
+        if (arr[i][i]=1)
+               {
+                 return false;
+               }
+        } 
+    return true;
+}
+ size =3
+    Identity(size);
+
+
+
+
+
+function Matrix(num) {
+for (var i = 0; i < num.length; i++)
+  {
+    rows = num.length;
+cols = num[i].length;
+if(rows != cols)
+  {
+   console.log("Matrix");
+   return false;
+  }
+  }
+  for (var i = 0; i < num.length; i++)
+   {
+    for (var j = 0; j < num.length; j++)
+     {
+      if (num[i][j] !== 1 && i === j || num[i][j] && i !== j)
+      {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+console.log(Matrix([[1, 0, 0], [0, 0, 0], [0, 0, 1]]))
+console.log(Matrix([[1, 0, 0],  [0, 1, 0],  [0, 0, 1]]))
+console.log(Matrix([[1, 0, 1],  [0, 1, 0],  [0, 0, 1]]))

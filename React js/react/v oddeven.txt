@@ -1,0 +1,29 @@
+arr1 = [10,20,30,40,50,45,67];
+arr2 = [34,23,56,57,89,22,11];
+a=[]
+b=[]
+function even(a){
+  res=0
+  x=[]
+  for(let i of a){
+    if(i%2==0){
+      x.push(i)}
+    
+    }
+  return x;
+  }
+
+function addition(c,d){
+  n=Math.min(c.length,d.length);
+  console.log(n);
+  e=[]
+  for(i=0;i<n;i++){
+    f=c[i]+d[i]
+    e.push(f)
+  }
+  return e;
+}
+
+arr3=even(arr1)
+arr4=even(arr2)
+arr5=addition(arr3,arr4)

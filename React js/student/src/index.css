@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+body {
+  
+    background: whitesmoke!important;
+    min-height: 700vh;
+    display: ruby-text;
+    font-weight: 600;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    padding: 40px;
+  }
+  
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+style{
+  background-color: whitesmoke;
+}
+
+
+.form{
+  text-align: center;
+  background-color: wheat;
+}
+.btn{
+  color: rgb(235, 235, 240);
+  background-color: red
+  
+}
+.formcontrol{
+  align-items: center;
+}
+.messages{
+  font-style: italic;
+  font-display: fall back;
+  
+
+}
+
+
+
+.index.js {
+  text-align: center;
+  border: cornsilk;
+  text-size-adjust: 30px;
+  background-color: cyan;
+}
+form {
+ border:2px solid rgb(10, 10, 10);
+ padding: 30px;
+ text-align: center;
+ background-color: cyan;
+}
+
+  
+ 

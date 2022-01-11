@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "question": "1. Which of the following is the correct name of React.js",
+      "choices": ["Reactjs","React","ReactJS","All of the above" 
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "question": "2.What of the following is used in React.js to increase performance?",
+      "choices": ["Original DOM", "Virtual DOM", "Ordinary DOM", "All of the above"],
+      "answer": "Virtual DOM"
+    },
+    {
+      "question": "3.A class is a type of function, but instead of using the keyword function to initiate it, which keyword do we use?",
+      "choices": ["Constructor", "Class","Object","DataObject"],
+      "answer": "Class"
+    },
+    {
+      "question": "4. Which of the following acts as the input of a class-based component?",
+      "choices": ["Class", "Factory", "Render", "Props"],
+      "answer": "Props"
+    },
+    {
+      "question": "5.Which of the following function is used to change the state of the React.js component?",
+      "choices": ["this.setState", "this.setChangeState", "this.State{}", "None of the above"],
+      "answer": "this.setState"
+    },
+    {
+      "question": "6.Which of the following keyword is used to create a class inheritance?",
+      "choices": ["Create", "Inherit", "Extend", "This"],
+      "answer": "Extend"
+    }
+  ]
+}

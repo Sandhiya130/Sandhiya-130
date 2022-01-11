@@ -1,0 +1,34 @@
+function addition(addtwo){
+
+  let sum = 0;
+
+for (let i = 0; i < addtwo.length; i++) {
+    sum += addtwo[i];
+}
+ console.log(sum);
+}
+
+//a = [11,23,12,24,56,3,4,78,55];
+arr1 = [10,20,30,40,50,45,67];
+arr2 = [34,23,56,57,89,22,11];
+
+
+// arr3=oddeven(arr1);
+// console.log(even);
+// arr4=oddeven(arr2);
+// console.log(even);
+ console.log(arr1);
+
+console.log(arr2);
+
+addtwo=[...arr1,...arr2];
+console.log(addtwo);
+
+
+arr3=oddeven(addtwo);
+console.log(even);
+
+arr3=addition(arr3);
+//console.log(addition([...odd1,...odd2]));
+addresult=addition([arr3]);
+console.log(addresult);

@@ -1,0 +1,77 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+
+class Calculator extends React.Component
+{
+  constructor()
+  {
+    super();
+    this.handler = this.handler.bind(this);
+    this.state={
+      a:0,
+      b:0,
+      operation:'',
+      ans:0,
+    }
+  }
+  handler(operation)
+  {
+    var ans;
+    var a= document.getElementById("a").value;
+    var b=document.getElementById("b").value;
+    a=parseInt(a);
+    b=parseInt(b);
+    switch(operation)
+    {
+      case "+":ans=a+b;
+              break;
+      case "-":ans=a-b;
+              break;
+      case "*":ans=a*b;
+                break;
+      case "/":ans=a/b;
+                break;
+    }
+   this.setState(({
+      a:a,
+      b:b,
+      ans:ans,
+      operation:operation
+   }));
+  }  
+
+  render()
+  {
+    return(
+    <>
+    <fieldset>
+    <legend>Sample Calculator</legend>
+   <table>
+     <tr>
+    
+   <h1> {this.state.a} {this.state.operation} {this.state.b} = {this.state.ans} </h1>
+     
+   
+   </tr>
+   <tr>
+     
+     <input  id="a" type="text" defaultValue={this.state.a}/></tr>
+   <tr> <input  id="b" type="text" defaultValue={this.state.b}/></tr>
+   
+   </table>
+   <button id="add" onClick={()=>this.handler("+")} size="lg" >+</button><br></br>
+   <button id="sub" onClick={()=>this.handler("-")} size="lg" >-</button><br></br>
+   <button id="multiply" onClick={()=>this.handler("*")} size="lg" >*</button><br></br>
+   <button id="division" onClick={()=>this.handler("/")} size="lg"  >/</button><br></br>
+   </fieldset>
+    </>
+    );
+  }
+}
+
+ReactDOM.render(
+  <Calculator />,
+  document.getElementById("root")
+);

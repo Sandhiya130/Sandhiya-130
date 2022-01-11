@@ -1,0 +1,63 @@
+function Calc(props)
+{
+  let a = parseInt(props.a);
+  let b= parseInt(props.b);
+  var operator={
+
+    "+":function (a,b){return a+b},
+    "-":function (a,b){return a-b},
+    "*":function (a,b){return a*b},
+    "/":function (a,b){return a/b},
+
+  };
+  
+  return <>
+  <h1>Addition of {a} and {b} is {operator[props.add](a,b)}</h1>
+  <h1>Subtraction of {a} and {b} is {operator[props.sub](a,b)}</h1>
+  <h1>Multiplication of {a} and {b} is {operator[props.mul](a,b)}</h1>
+  <h1>Division of {a} and {b} is {operator[props.div](a,b)}</h1>
+  </>
+
+  
+}
+ReactDOM.render(
+    
+      <Calc a="10" b="20" add="+" sub="-" mul="*" div="/" />
+     ,
+    document.getElementById('root')
+  );
+
+
+
+
+
+//class Calcul extends React.Component
+//{
+  //constructor(props)
+  //{
+    //super(props)
+    //this.a=parseInt("25");
+    //this.b=parseInt("35");
+  //}
+
+  //}
+
+    //this.a=parseInt(this.props.a);
+    //this.b=parseInt(this.props.b);
+
+  
+  //render()
+  //{
+    //return<>
+    // <h1>add = {this.a+this.b}</h1> --!>
+    //<h1>sub = {this.a-this.b}</h1>
+    //<h1>div = {this.a/this.b}</h1>
+    //<h1>multiply = {this.a*this.b}</h1>   </>
+  //}
+//}
+
+//ReactDOM.render(
+  //<Calcul a="40" b="10"/>,
+  //<Calcul/>,
+  //document.getElementById("root")
+//);

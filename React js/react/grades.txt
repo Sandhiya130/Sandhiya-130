@@ -1,0 +1,18 @@
+function SGrade(props){
+  //let maths = parseInt(props.a);
+  //let biology = parseInt(props.b);
+  //let english = parseInt(props.c);
+   //let result = (maths + biology + english)/3;
+  //if (result>=90){
+  //return <h1> marks scored {props.a}, {props.b} and  {props.c} - A grade </h1>
+//} else if (result>=80){
+  //return <h1> marks scored {props.a}, {props.b} and  {props.c} - B grade </h1>
+//} else if (result>=70){
+  //return <h1> marks scored {props.a}, {props.b} and  {props.c} - c grade </h1>
+//} else{ 
+ // return <h1> marks scored {props.a}, {props.b} and  {props.c} - Fail </h1> }
+//}
+/ReactDOM.render(
+  //<SGrades a="70" b="80" c="90"/>,
+ // document.getElementById('root')
+//);

@@ -1,0 +1,61 @@
+class Calci extends React.Component{
+constructor(props){
+  super(props);
+  this.state={ a: '20', b: '5', s: '' };
+  this.addHandler=this.addHandler.bind(this)
+  this.multiplyHandler=this.multiplyHandler.bind(this)
+  this.subtractionHandler=this.subtractionHandler.bind(this)
+  this.divisionHandler=this.divisionHandler.bind(this)
+  
+}
+addHandler()
+{
+  this.setState(s =>(
+    {result:s.a+s.b}
+  ));
+}
+  multiplyHandler()
+  {
+    this.setState(s =>(
+      {result:s.a*s.b}
+    ));
+  }
+    subtractionHandler()
+    {
+      this.setState(s =>(
+        {result:s.a-s.b}
+      ));
+    }
+      divisionHandler()
+      {
+        this.setState(s =>(
+          {result:s.a/s.b}
+        ));
+}
+
+
+render()
+{
+  return<>
+
+  <div>
+   <h1> Result= {this.state.result}</h1>
+    <h1><button onClick={this.addHandler}>Addition</button></h1>
+    <h1><button onClick={this.multiplyHandler}>multiply</button></h1>
+    <h1><button onClick={this.subtractionHandler}>Subtraction</button></h1>
+    <h1><button onClick={this.divisionHandler}>Division</button></h1>
+  </div>
+  </>
+  
+}
+
+}
+ReactDOM.render(
+  <Calci/>,
+  document.getElementById("root")
+);
+
+
+
+  reportWebVitals();
+
