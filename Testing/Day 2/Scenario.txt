@@ -1,0 +1,30 @@
+day 2 activity
+
+
+Scenario 1 
+Equivalance Partitioning
+Suraj has joined as a Software Testing Engineer for the ABC project. He is assigned the task of designing a series of tests to validate the sales report functionality for each of the 12 months in a year. 
+Which Black Box testing technique should Suraj use?
+
+Scenario 2 
+Answer: State Transition
+
+Shaheen, a Test Developer, is assigned the task of testing an online trading application. The challenge in this task is that the application is designed in a way where each user action and outcome is dependent on external events that may or may not occur.
+Which Black Box testing technique should Shaheen use for testing the online trading application?
+
+Scenario 3
+Answer: Descision Table
+
+John, a Test Lead, and Julie, a Developer, are working on the XYZ project. Julie has developed a program to manage hospital admittance. The admittance options she developed can be regulated by predefined business rules. John is assigned to test the hospital admittance program that was created by Julie .
+Which Black Box Testing technique should John use for testing the hospital admittance program? 
+
+Scenario 4
+Answer: Boundary Value Analysis
+
+Chan, a Test Lead, is assigned the task of testing a scheduling application for checking the proper processing of calendar entries for leap years.
+Which Black Box testing technique should Chan use for testing the scheduling application? 
+
+Scenario 5
+Answer: Use case
+
+Beulah, a customer of GRT Bank, wants to make a payment on her electricity bill. Since she has an online account created with GRT bank, she wants to make a payment online using her login (online) credentials. Ken, working as a Software Tester in GRT Bank, wants to design a test for this scenario.

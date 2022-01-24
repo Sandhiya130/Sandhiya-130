@@ -1,0 +1,17 @@
+1. Module’s Logic- Unit testing
+2. Disk Failure and Mirroring System-User Acceptance testing
+3. Interfaces are installed and run as expected- System testing
+4. System Performance at peak volume levels- System testing
+5. Business requirement being tested by the users- Acceptance Testing
+6. Business process errors and exception  logic are handled correctly (tested by the Test team)- System testing
+7. Assembly and combined operations of components- System testing
+8. Low-level functionality of several small sets of related components- Integration testing
+9. Testing logical branches- Integration testing
+10. Nature of performance degradation- System testing 
+
+
+
+1.spiral 
+2.prototype model
+3.incremental model
+4.waterfall model 
