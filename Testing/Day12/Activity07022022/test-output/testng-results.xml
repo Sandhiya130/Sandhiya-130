@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-07T17:40:12 IST" name="Default suite" finished-at="2022-02-07T17:40:33 IST" duration-ms="20901">
+    <groups>
+    </groups>
+    <test started-at="2022-02-07T17:40:12 IST" name="Default test" finished-at="2022-02-07T17:40:33 IST" duration-ms="20901">
+      <class name="activity.testng.Facebook">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:activity.testng.Facebook@10feca44]" started-at="2022-02-07T17:40:12 IST" name="beforeTest" finished-at="2022-02-07T17:40:16 IST" duration-ms="4636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="test()[pri:1, instance:activity.testng.Facebook@10feca44]" started-at="2022-02-07T17:40:17 IST" name="test" finished-at="2022-02-07T17:40:23 IST" duration-ms="6443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="login()[pri:2, instance:activity.testng.Facebook@10feca44]" started-at="2022-02-07T17:40:23 IST" name="login" finished-at="2022-02-07T17:40:33 IST" duration-ms="9760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:activity.testng.Facebook@10feca44]" started-at="2022-02-07T17:40:33 IST" name="afterTest" finished-at="2022-02-07T17:40:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- activity.testng.Facebook -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

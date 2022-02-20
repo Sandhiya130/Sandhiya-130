@@ -1,0 +1,9 @@
+More often we use two types of hooks:
+“Before” hook and “After” hook. 
+Method/function/piece of code, defined within Before
+and After hooks, always run, even if the scenario gets passed or failed.
+
+As the name suggests, 
+before hook gets executed well before any other 
+test scenarios, and after hook gets executed after 
+executing all the scenarios.

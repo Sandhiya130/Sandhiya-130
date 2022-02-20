@@ -1,0 +1,18 @@
+
+Tag:
+It looks simple when we just have one, two, or maybe five scenarios
+in a feature file. However, in real life it does not happen.
+For each feature under test, we may have 10, 20, or may be
+more number of scenarios in a single feature file.
+They may represent different purpose (Smoke test/Regression test),
+different prospectives (Developer/QA/BA), different 
+status (Ready for execution/Work in progress), etc. 
+How to manage execution for such a mass?
+
+For this, Cucumber has already provided a way to organize 
+your scenario execution by using tags in feature file.
+We can define each scenario with a useful tag. Later,
+in the runner file, we can decide which specific 
+tag (and so as the scenario(s)) we want Cucumber to execute.
+Tag starts with “@”. After “@” you can have any relevant text
+to define your tag. Let’s understand this with an example.

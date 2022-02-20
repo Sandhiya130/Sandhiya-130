@@ -1,0 +1,122 @@
+TDD  & BDD with cucumber:
+1.setup cucumber eclipse plugin
+--->go to eclips market place type cucumber
+--->install cucumber eclipse plugin
+--->create maven project
+--->download cucumber jvm-java dependency
+---->download from maven repository
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+</dependency>
+--->install cucumber jvm-junit dependency
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+    </dependency>
+
+--->install junit dependency
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13</version>
+    </dependency>
+--->src/test/java--->click new file--->filename.feature
+--->feature file will be created with BDD template
+ex:
+Feature:User Login
+User should be able to login using valid credentials
+
+Scenaio: Testing login with valid credentials
+Given I am on login page
+When I enter username as "robert" and password as "robert"
+And I submit login page
+Then I will redirect to user home page
+--->now create new class[runner] by selecting src/java/test folder
+--->execute logintest.feature file
+--->copy output feature file and put in the new java class
+--->create new java class step defination and paste the output of feature file
+--->come to testrunner add and glue in @cucumberoperation line of code
+
+
+
+
+
+--->now run the test runner 
+--->in the console you will get a code 
+--->copy the code and create one more java class
+--->class name is stepdefination and paste the code
+
+--->next we need to bind/combine test runner and step defination
+
+
+
+
+
+
+2.Maven Dependencies
+3.Feature Files
+4.Scenarios
+5.keywords-Given,when,Then,and,but
+6.Generate step definations
+7.Parametizing test
+8.Data driven test using cucumber
+steps:
+
+
+
+
+
+
+
+9.cucumber reports
+10.Hocks
+
+
+
+
+1.intro to TDD & BDD
+what is TDD:[test driven development]
+writing test-->code-->run test-->all pass-->refactoring-->release
+--->this is demand on agile
+--->agile is short release
+
+what is BDD:[
+requirements:
+testing req--->testing percs
+business reg--.business
+user req-->
+
+Testing:
+1.Test Scenarios---->situation/possible ways
+usecase--->testcase
+
+BDD--->framework
+
+2.Testcase
+
+
+Business requirement
+Features-->Scenario(testcase)
+this is mostly needed for user acceptance testing
+it is also works in system testing.
+
+Cucumber:
+--->it is a tool to support BDD.
+--->it gives a framework to write business feeature scenarios.
+selenium--->its job is automate the browser
+testng--->its a job for performing testing/comparing expeted and actual.
+cucumber--->its a job of creating business requirement framework.
+
+understanding cucumber templates:
+1.Feature file
+2.scenario
+3.Test Runner
+4.Step generator

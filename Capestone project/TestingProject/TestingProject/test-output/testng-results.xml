@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-20T21:52:36 IST" name="Default suite" finished-at="2022-02-20T21:53:15 IST" duration-ms="39376">
+    <groups>
+    </groups>
+    <test started-at="2022-02-20T21:52:36 IST" name="Default test" finished-at="2022-02-20T21:53:15 IST" duration-ms="39376">
+      <class name="com.selenium.project4.Airline">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.selenium.project4.Airline@49c7b90e]" started-at="2022-02-20T21:52:36 IST" name="beforeTest" finished-at="2022-02-20T21:52:40 IST" duration-ms="4245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="airline()[pri:1, instance:com.selenium.project4.Airline@49c7b90e]" started-at="2022-02-20T21:52:40 IST" name="airline" finished-at="2022-02-20T21:53:03 IST" duration-ms="23139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- airline -->
+        <test-method signature="nonstop()[pri:2, instance:com.selenium.project4.Airline@49c7b90e]" started-at="2022-02-20T21:53:03 IST" name="nonstop" finished-at="2022-02-20T21:53:07 IST" duration-ms="3423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nonstop -->
+        <test-method signature="price()[pri:3, instance:com.selenium.project4.Airline@49c7b90e]" started-at="2022-02-20T21:53:07 IST" name="price" finished-at="2022-02-20T21:53:07 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- price -->
+        <test-method signature="amount()[pri:4, instance:com.selenium.project4.Airline@49c7b90e]" started-at="2022-02-20T21:53:07 IST" name="amount" finished-at="2022-02-20T21:53:07 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amount -->
+        <test-method signature="capture()[pri:5, instance:com.selenium.project4.Airline@49c7b90e]" started-at="2022-02-20T21:53:07 IST" name="capture" finished-at="2022-02-20T21:53:10 IST" duration-ms="3353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capture -->
+        <test-method signature="book()[pri:6, instance:com.selenium.project4.Airline@49c7b90e]" started-at="2022-02-20T21:53:10 IST" name="book" finished-at="2022-02-20T21:53:11 IST" duration-ms="1256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- book -->
+        <test-method signature="clickOnContinue()[pri:7, instance:com.selenium.project4.Airline@49c7b90e]" started-at="2022-02-20T21:53:11 IST" name="clickOnContinue" finished-at="2022-02-20T21:53:14 IST" duration-ms="3034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContinue -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.selenium.project4.Airline@49c7b90e]" started-at="2022-02-20T21:53:14 IST" name="afterTest" finished-at="2022-02-20T21:53:15 IST" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.selenium.project4.Airline -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

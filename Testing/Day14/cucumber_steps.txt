@@ -1,0 +1,48 @@
+1.Feature:
+A Feature can be defined as a standalone
+unit or functionality of a project.
+Create and remove the user from the social networking site.
+
+User login functionality for the social networking site.
+
+Sharing photos or videos on the social networking site.
+
+Sending a friend request.
+
+Logout.
+
+Feature − Name of the feature under test.
+
+Description (optional) − Describe about feature under test.
+
+Scenario − What is the test scenario.
+
+Given − Prerequisite before the test steps get executed.
+
+When − Specific condition which should match in order to execute
+the next step.
+
+Then − What should happen if the condition mentioned in WHEN
+is satisfied.
+
+Ex:
+public void goToFacebook() { 
+   driver = new FirefoxDriver(); 
+   driver.navigate().to("https://www.facebook.com/"); 
+} 
+@When "^user logs in using Username as \"([^\"]*)\" and Password as \"([^\"]*)\"$"
+public void I_enter_Username_as_and_Password_as(String arg1, String arg2) {
+   driver.findElement(By.id("email")).sendKeys(arg1);
+   driver.findElement(By.id("pass")).sendKeys(arg2);
+   driver.findElement(By.id("u_0_v")).click(); 
+} 
+@Then"^login should be unsuccessful$" 
+public void validateRelogin() { 
+   if(driver.getCurrentUrl().equalsIgnoreCase(
+      "https://www.facebook.com/login.php?login_attempt=1&lwv=110")){ 
+         System.out.println("Test Pass");
+   } else { 
+      System.out.println("Test Failed"); 
+   } 
+   driver.close(); 
+}
